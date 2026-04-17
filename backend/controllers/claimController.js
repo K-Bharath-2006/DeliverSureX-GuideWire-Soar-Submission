@@ -72,7 +72,7 @@ exports.reportClaim = async (req, res) => {
         form.append('file', imageBuffer, { filename: 'upload.jpg', contentType: 'image/jpeg' });
         
         // POST to external AI microservice
-        const crowdRes = await axios.post('http://127.0.0.1:8000/detect', form, {
+        const crowdRes = await axios.post('https://deliversurex-soar-backend.onrender.com/detect', form, {
           headers: form.getHeaders(),
           timeout: 15000 
         });
