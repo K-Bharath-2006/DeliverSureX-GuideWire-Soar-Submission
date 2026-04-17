@@ -1,4 +1,4 @@
-export const API_BASE_URL = 'http://localhost:5000/api';
+export const API_BASE_URL = 'https://deliversurex-backend-kfxe.onrender.com/api';
 
 const endpoints = {
   login: `${API_BASE_URL}/login`,
